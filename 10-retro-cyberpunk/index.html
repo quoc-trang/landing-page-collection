@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER_DECK // TERMINAL 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="crt-overlay"></div>
+    <div class="scanline"></div>
+
+    <div class="terminal-container">
+        <header class="top-bar">
+            <div class="status">STATUS: ONLINE</div>
+            <div class="time">22:42:09</div>
+        </header>
+
+        <section class="main-interface">
+            <div class="glitch" data-text="NEURAL_LINK">NEURAL_LINK</div>
+            <p class="subtitle">> SYSTEM_READY // WAITING_FOR_INPUT...</p>
+
+            <div class="grid-layout">
+                <div class="card hacker-card">
+                    <div class="card-header">[ PROJECT_X ]</div>
+                    <div class="card-content">
+                        <p>> DECRYPTING FILE...</p>
+                        <p>> ACCESS GRANTED.</p>
+                        <div class="progress-bar-retro">
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card data-card">
+                    <div class="card-header">[ DATA_STREAM ]</div>
+                    <ul class="data-list">
+                        <li>0x4F2A <span class="green">CONNECT</span></li>
+                        <li>0x9B1C <span class="red">REJECT</span></li>
+                        <li>0x3D4E <span class="green">CONNECT</span></li>
+                        <li>0x1A2B <span class="yellow">PENDING</span></li>
+                    </ul>
+                </div>
+
+                <div class="card net-card">
+                    <div class="card-header">[ NET_STATUS ]</div>
+                    <div class="net-grid">
+                        <div class="net-node active"></div>
+                        <div class="net-node active"></div>
+                        <div class="net-node inactive"></div>
+                        <div class="net-node active"></div>
+                        <div class="net-node warning"></div>
+                        <div class="net-node active"></div>
+                    </div>
+                    <p class="small-text">> NODE_05: UNSTABLE</p>
+                </div>
+
+                <div class="card sys-card">
+                    <div class="card-header">[ SYSTEM_RES ]</div>
+                    <div class="stat-row">
+                        <span>CPU:</span>
+                        <div class="bar-wrap">
+                            <div class="bar-fill" style="width: 89%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span>RAM:</span>
+                        <div class="bar-wrap">
+                            <div class="bar-fill" style="width: 42%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span>NET:</span>
+                        <div class="bar-wrap">
+                            <div class="bar-fill" style="width: 76%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logs-container">
+                <div class="card-header">[ SYSTEM_LOGS ]</div>
+                <div class="log-content">
+                    <p>> [22:42:01] User login detected...</p>
+                    <p>> [22:42:02] Establishing secure handshake...</p>
+                    <p>> [22:42:05] Proxy chain: 192.168.0.1 -> 10.0.0.5</p>
+                    <p>> [22:42:08] WARNING: Intrusion attempt blocked.</p>
+                    <p>> [22:42:10] Encrypting packet stream...</p>
+                    <p>> [22:42:15] Neural link calibrated (98.4%)</p>
+                </div>
+            </div>
+
+            <div class="command-line">
+                <span class="prompt">user@cyberdeck:~$</span>
+                <span class="cursor">_</span>
+            </div>
+
+            <div class="actions">
+                <a href="#" class="btn-cyber">jack_in</a>
+                <a href="../index.html" class="btn-cyber-alt">log_out</a>
+            </div>
+
+            <footer class="terminal-footer">
+                <span>MEM: 64TB</span>
+                <span>UPTIME: 42:10:05</span>
+                <span>SECURE: TRUE</span>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>

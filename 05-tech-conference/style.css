@@ -1,0 +1,477 @@
+:root {
+    --primary: #2d3436;
+    --accent: #0984e3;
+    --accent-glow: #74b9ff;
+    --dark: #000000;
+    --light: #ffffff;
+    --font-head: 'Chakra Petch', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: var(--font-body);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header */
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1540575467063-17e6fc8c62d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    border-bottom: 4px solid var(--accent);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.year {
+    color: var(--accent);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.btn-ticket {
+    border: 2px solid var(--accent);
+    padding: 0.5rem 1.5rem;
+    color: var(--accent) !important;
+}
+
+.btn-ticket:hover {
+    background: var(--accent);
+    color: white !important;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.date-badge {
+    display: inline-flex;
+    flex-direction: column;
+    background: var(--accent);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font-head);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1;
+}
+
+.month {
+    font-size: 1.2rem;
+}
+
+.day {
+    font-size: 2rem;
+}
+
+h1 {
+    font-family: var(--font-head);
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 500px;
+    margin-bottom: 3rem;
+    color: #dfe6e9;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--font-head);
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--font-head);
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: black;
+}
+
+/* Speakers */
+.speakers-section {
+    padding: 8rem 0;
+    background: #111;
+}
+
+.section-title {
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title-line {
+    width: 50px;
+    height: 4px;
+    background: var(--accent);
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.speaker-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.speaker-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-10px);
+}
+
+.speaker-img {
+    height: 300px;
+    background-color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Grayscale effect on images */
+.speaker-img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.speaker-card:hover .speaker-img {
+    filter: grayscale(0%);
+}
+
+.s1 {
+    background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+
+.s2 {
+    background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+
+.s3 {
+    background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+
+.s4 {
+    background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
+}
+
+
+.speaker-info {
+    padding: 1.5rem;
+}
+
+.speaker-info h3 {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.role {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.topic {
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Schedule */
+.schedule-section {
+    padding: 8rem 0;
+}
+
+.schedule-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.tab {
+    padding: 1rem 3rem;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-family: var(--font-head);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tab.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+}
+
+.timeline {
+    border-left: 2px solid #333;
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.4rem;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.time {
+    min-width: 100px;
+    color: #888;
+    font-family: var(--font-head);
+}
+
+.event-card {
+    background: #111;
+    padding: 2rem;
+    flex: 1;
+    border: 1px solid #333;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.keynote {
+    background: #e84393;
+}
+
+.tech {
+    background: #0984e3;
+}
+
+.workshop {
+    background: #00b894;
+}
+
+.panel {
+    background: #6c5ce7;
+}
+
+.event-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: #888;
+}
+
+/* Tickets */
+.tickets-section {
+    padding: 8rem 0;
+    background: #111;
+}
+
+.ticket-wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--accent);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ticket-info {
+    flex: 2;
+    padding: 4rem;
+    color: white;
+}
+
+.ticket-info h2 {
+    font-family: var(--font-head);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.price-card {
+    flex: 1;
+    background: white;
+    color: black;
+    padding: 3rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 4px;
+}
+
+.price-header {
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.price-amount {
+    font-size: 4rem;
+    font-family: var(--font-head);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--accent);
+}
+
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.price-features li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.btn-full {
+    display: block;
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    padding: 3rem 0;
+    border-top: 1px solid #333;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-brand {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+}
+
+.f-links a {
+    color: #888;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 0.9rem;
+}
+
+.f-links a:hover {
+    color: white;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .ticket-wrapper {
+        flex-direction: column;
+    }
+
+    .price-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

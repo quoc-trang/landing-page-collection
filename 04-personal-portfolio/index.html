@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Visual Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar">
+        <a href="#" class="logo">AM.</a>
+        <div class="menu-btn">Menu</div>
+        <div class="full-menu">
+            <div class="menu-close">Close</div>
+            <ul class="menu-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="reveal-text">Creating digital</h1>
+            <h1 class="reveal-text">experiences that</h1>
+            <h1 class="reveal-text">matter.</h1>
+
+            <div class="hero-sub ml-auto">
+                <p>Alex Morgan is a multidisciplinary designer focused on UI/UX, branding, and motion. Currently
+                    building the future at TechCorp.</p>
+                <a href="#work" class="scroll-down">Scroll Down <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="work-section">
+        <div class="work-list">
+            <div class="work-item">
+                <div class="work-info">
+                    <span class="work-cat">Mobile App</span>
+                    <h2>Fintech Revolution</h2>
+                </div>
+                <div class="work-img">
+                    <div class="mock-img color-1"></div>
+                </div>
+            </div>
+            <div class="work-item right">
+                <div class="work-info">
+                    <span class="work-cat">Web Design</span>
+                    <h2>Architecture Digest</h2>
+                </div>
+                <div class="work-img">
+                    <div class="mock-img color-2"></div>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="work-info">
+                    <span class="work-cat">Branding</span>
+                    <h2>Eco Life System</h2>
+                </div>
+                <div class="work-img">
+                    <div class="mock-img color-3"></div>
+                </div>
+            </div>
+            <div class="work-item right">
+                <div class="work-info">
+                    <span class="work-cat">Editorial</span>
+                    <h2>Modern Type</h2>
+                </div>
+                <div class="work-img">
+                    <div class="mock-img color-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-title">
+                    <h2>02.<br>About</h2>
+                </div>
+                <div class="about-text">
+                    <p class="lead">I believe good design is obvious. Great design is transparent.</p>
+                    <p>With over 5 years of experience in the digital space, I've worked with startups and Fortune 500
+                        companies to solve complex problems through clean, user-centric interfaces. My approach is
+                        rooted in minimalism and functionality.</p>
+
+                    <div class="services-list">
+                        <div class="service-col">
+                            <h4>Design</h4>
+                            <ul>
+                                <li>UI/UX Design</li>
+                                <li>Design Systems</li>
+                                <li>Prototyping</li>
+                            </ul>
+                        </div>
+                        <div class="service-col">
+                            <h4>Strategy</h4>
+                            <ul>
+                                <li>Brand Identity</li>
+                                <li>User Research</li>
+                                <li>Art Direction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <h2>Let's work together</h2>
+                <a href="mailto:hello@alexmorgan.com" class="email-link">hello@alex.design</a>
+
+                <div class="footer-bottom">
+                    <div class="socials">
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Dribbble</a>
+                    </div>
+                    <div class="copy">
+                        &copy; 2024 Alex Morgan. <a href="../index.html">Back to Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+    </script>
+</body>
+
+</html>
